@@ -1,0 +1,59 @@
+
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CHAT Room</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+ <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+
+ <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+ <link rel="stylesheet" href="kwitter_room.css">
+ <script src="kwitter_room.js"></script>
+</head>
+
+<body>
+ <br>
+ <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()" style="float: right;margin-right: 20px;text-align: center;border: 2px solid black;font-size: 17px;">&nbsp;Logout</button>
+
+<br>
+ <center>
+  <h2 style="color: white;	font-family: 'Baloo Tamma 2', cursive;
+	font-size: 45px;margin-left: 117px;;
+	">
+   CHAT Web App
+   <sup>
+    <img src="icon.svg" style="height: 70px;margin-top: 10px;">
+   </sup>
+  </h2>
+
+  <p style="font-size: 25px;margin-right: 58px;margin-top: -13px;margin-bottom:25px;color: white;" id="name"></p>
+
+  <label style="font-size: 18px;margin-right: 58px;">#Add Room Name</label>
+  <br><br>
+  <input type="text" id="room_name" class="form-control" placeholder="Add Room Name"
+   style="width:50%;margin-right: 29px;">
+  <br><br>
+
+  <button class="btn btn-info" style="border: 2px solid black;margin-right: 58px;" onclick="addRoom()">Create
+   Room</button>
+  <br><br>
+  <span style="font-size: 190%;color: white;margin-right: 58px">#Trending Room</span>
+  <br><br>
+  <div id="output"></div>
+ </center>
+
+ <br>
+
+
+
+</body>
+
+</html>

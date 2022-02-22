@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CHAT Message page</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+ <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()" style="float: right;margin-right: -40px;text-align: center;border: 2px solid black;margin-top:10px;font-size: 17px;">&nbsp;Logout</button>
+	<center>
+		<h1 class="header">
+			CHAT <sup>
+				<img src="icon.svg" style=" margin-bottom: none;">
+			</sup>
+		</h1>
+	
+		<div id="output" style="text-align: left;margin-bottom: 70px;overflow: hidden;
+		overflow-y: scroll;height: 176px;"> </div>
+		
+	</center>
+</div>
+
+<center>
+	<div class="input_div_message_page">
+		<label style="font-family: serif;font-size: 20px;">Send :</label>
+		<input type="text" id="msg" class="form-control" placeholder="Message">
+		<button onclick="send()" class="btn btn-info" style="border: 2px solid black;">Send</button>
+		<br><br>
+	</div>
+</center>
+
+<script src="kwitter_page.js"></script>
+</body>
+</html>
